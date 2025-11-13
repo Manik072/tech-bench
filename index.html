@@ -720,20 +720,21 @@
           <span class="plus-icon">+</span>
         </button>
         <div class="details">
+            <div class="option">
+                <form>
+              <input type="radio" id="freemium-wired" name="freemium-charging" value="wired">
+              <label for="freemium-wired"><strong><i></i></strong></label>
+              </div></form>
           <strong>🚀 Speed:</strong> 15-30 Mbps per user<br>
           <strong>📡 Range:</strong> Up to 25 meters<br>
           <strong>📶 Network Type:</strong> 5 GHz band (higher speed, lower range)<br>
           <strong>💵 Charges: </strong>
 
-          <ul>
-            <li>₹15 for 30 min</li> <div class="option">
-                <form>
-              <input type="radio" id="freemium-wired" name="freemium-charging" value="wired">
-              <label for="freemium-wired"><strong><i></i></strong></label>
-              </div>
-            <li>₹20 per Gb</li>
-          </ul></form>
+          
+            ₹15 for 30 min
+            
         </div>
+        <a href="http://127.0.0.1:5500/blank.html"> Continue! </a>
       `;
       popup.style.display = "block";
     });
@@ -750,14 +751,21 @@
         </button>
         <div class="details">
           <h3>Charging</h3>
-          <strong>WIRED:</strong>
-          <ul>
-            <li><strong>Power Output:</strong> 5V/2A = 10 Watts</li>
-          </ul>
-          <strong>WIRELESS:</strong>
-          <ul>
-            <li><strong>Power Output:</strong> 5 Watt</li>
-          </ul>
+          <div class="option">
+              <input type="radio" id="freemium-wired" name="freemium-charging" value="wired">
+              <label for="freemium-wired"><strong><i>WIRED</i></strong></label>
+              <ul>
+                <li><strong>Power Output:</strong> 5V/2A = 10 Watts</li>
+              </ul>
+            </div>
+          <div class="option"> 
+              <input type="radio" id="freemium-wireless" name="freemium-charging" value="wireless">
+              <label for="freemium-wireless"><strong><i>WIRELESS</i></strong></label>
+              <ul>
+                <li><strong>Power Output:</strong> 5 Watt</li>
+              </ul>
+            </div>
+          
           <h3>Wi-Fi</h3> 
           <strong>🚀 Speed:</strong> 2-5 Mbps per user<br>
           <strong>📡 Range:</strong> 10-15 meters around the bench<br>
@@ -771,15 +779,24 @@
           <span class="plus-icon">+</span>
         </button>
         <div class="details">
+          
           <h3>Charging</h3>
-          <strong>WIRED:</strong>
-          <ul>
-            <li><strong>Power Output:</strong> 9V/2A = 18 Watts (almost 2x faster charging)</li>
-          </ul>
-          <strong>WIRELESS:</strong>
-          <ul>
-            <li><strong>Power Output:</strong> 10-15 Watt (2-3x faster charging)</li>
-          </ul>
+          <div class="option">
+              <input type="radio" id="premium-wired" name="premium-charging" value="wired">
+              <label for="premium-wired"><strong><i>WIRED</i></strong></label>
+              <ul>
+                <li><strong>Power Output:</strong> 9V/2A = 18 Watts (almost 2x faster charging)</li>
+                <li><strong>Charges:</strong> ₹15 for 30 min</li>
+              </ul>
+            </div>
+         <div class="option"> 
+              <input type="radio" id="premium-wireless" name="premium-charging" value="wireless">
+              <label for="premium-wireless"><strong><i>WIRELESS</i></strong></label>
+              <ul>
+                <li><strong>Power Output:</strong> 10-15 Watt (2-3x faster charging)</li>
+                <li><strong>Charges:</strong> ₹15 for 30 min</li>
+              </ul>
+            </div>
           <h3>Wi-Fi</h3>
           <strong>🚀 Speed:</strong> 15-30 Mbps per user<br>
           <strong>📡 Range:</strong> Up to 25 meters<br>
@@ -793,20 +810,25 @@
           <span class="plus-icon">+</span>
         </button>
         <div class="details">
-          <h3>Wi-Fi</h3>
-          <strong>🚀 Speed:</strong> 2-5 Mbps per user<br>
-          <strong>📡 Range:</strong> 10-15 meters around the bench<br>
-          <h3>Charging</h3>
-          <strong>WIRED:</strong>
-          <ul>
-            <li><strong>Power Output:</strong> 9V/2A = 18 Watts (almost 2x faster charging)</li>
-            <li><strong>Charges:</strong> ₹15 for 30 min</li>
-          </ul>
-          <strong>WIRELESS:</strong>
-          <ul>
-            <li><strong>Power Output:</strong> 10-15 Watt (2-3x faster charging)</li>
-            <li><strong>Charges:</strong> ₹15 for 30 min</li>
-          </ul>
+          <form>
+            <div class="option">
+              <input type="radio" id="premium-wired" name="premium-charging" value="wired">
+              <label for="premium-wired"><strong><i>WIRED</i></strong></label>
+              <ul>
+                <li><strong>Power Output:</strong> 9V/2A = 18 Watts (almost 2x faster charging)</li>
+                <li><strong>Charges:</strong> ₹15 for 30 min</li>
+              </ul>
+            </div>
+            
+            <div class="option"> 
+              <input type="radio" id="premium-wireless" name="premium-charging" value="wireless">
+              <label for="premium-wireless"><strong><i>WIRELESS</i></strong></label>
+              <ul>
+                <li><strong>Power Output:</strong> 10-15 Watt (2-3x faster charging)</li>
+                <li><strong>Charges:</strong> ₹15 for 30 min</li>
+              </ul>
+            </div>
+          </form>
         </div>
 
         <button class="sub-option" onclick="toggleDetails(this)">
@@ -816,24 +838,35 @@
           <span class="plus-icon">+</span>
         </button>
         <div class="details">
-          <h3>Charging</h3>
-          <strong>WIRED:</strong>
-          <ul>
-            <li><strong>Power Output:</strong> 5V/2A = 10 Watts</li>
-          </ul>
-          <strong>WIRELESS:</strong>
-          <ul>
-            <li><strong>Power Output:</strong> 5 Watt</li>
-          </ul>
+          <h3> Charging </h3>
+            <form>
+            <div class="option">
+              <input type="radio" id="freemium-wired" name="freemium-charging" value="wired">
+              <label for="freemium-wired"><strong><i>WIRED</i></strong></label>
+              <ul>
+                <li><strong>Power Output:</strong> 5V/2A = 10 Watts</li>
+              </ul>
+            </div>
+            
+            <div class="option"> 
+              <input type="radio" id="freemium-wireless" name="freemium-charging" value="wireless">
+              <label for="freemium-wireless"><strong><i>WIRELESS</i></strong></label>
+              <ul>
+                <li><strong>Power Output:</strong> 5 Watt</li>
+              </ul>
+        </div>    
+          </form>
+        
           <h3>Wi-Fi</h3>
+        
           <strong>🚀 Speed:</strong> 15-30 Mbps per user<br>
           <strong>📡 Range:</strong> Up to 25 meters<br>
           <strong>💵 Charges:</strong>
-          <ul>
-            <li>₹15 for 30 min</li>
-            <li>₹20 per GB</li>
-          </ul>
+          
+            ₹15 for 30 min
         </div>
+        <a href="http://127.0.0.1:5500/blank.html"> Continue! </a>
+        
       `;
       popup.style.display = "block";
     });
@@ -847,6 +880,7 @@
         popup.style.display = "none";
       }
     });
+    
   </script>
 </body>
 </html>
